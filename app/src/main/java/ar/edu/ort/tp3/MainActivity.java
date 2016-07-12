@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private FragmentTabHost tabHost;
-    private String userName="";
+    public String userName="";
     private TextView navUserName;
     ArrayList<Jugada> jugadas;
 

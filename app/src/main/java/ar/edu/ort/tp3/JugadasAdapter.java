@@ -45,13 +45,13 @@ public class JugadasAdapter extends BaseAdapter {
 
         TextView nombreTV = (TextView)view.findViewById(R.id.nombre);
         TextView secuenciaTV = (TextView)view.findViewById(R.id.secuencia);
-        TextView clicksTV = (TextView)view.findViewById(R.id.clicks);
+        TextView clicksTV = (TextView)view.findViewById(R.id.Cantidad_clicks);
 
 
         Jugada p = jugada.get(position);
         nombreTV.setText(p.nombre);
         secuenciaTV.setText(p.secuencia);
-        clicksTV.setText(p.Cantidad_clicks);
+        clicksTV.setText(String.valueOf(p.Cantidad_clicks));
         return view;
     }
     }

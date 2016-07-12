@@ -18,6 +18,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
    BotonJuego b1,b2,b3,b4,b5,b6,b7,b8,b9;
     ArrayList<Jugada> jugadas;
     Jugada jugada;
+    MainActivity actividad;
     public FirstFragment() {
         // Required empty public constructor
     }
@@ -25,9 +26,11 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        MainActivity actividad = (MainActivity) getActivity();
+        actividad = (MainActivity) getActivity();
         jugadas = actividad.getJugadas();
         jugada = new Jugada();
+        jugada.nombre = actividad.userName;
+
     }
 
     @Override
@@ -122,6 +125,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
                 b8.invertir();
                 b6.invertir();
                 jugada.secuencia = jugada.secuencia + "9,";
+
                 break;
 
         }
@@ -135,7 +139,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
             jugada = new Jugada();
             jugada.Cantidad_clicks = 0;
             jugada.secuencia = "";
-
+            jugada.nombre = actividad.userName;
 
         }
 
@@ -148,6 +152,7 @@ public class FirstFragment extends Fragment implements View.OnClickListener {
             jugada = new Jugada();
             jugada.Cantidad_clicks = 0;
             jugada.secuencia = "";
+            jugada.nombre = actividad.userName;
 
         }
     }

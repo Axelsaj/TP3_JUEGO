@@ -37,7 +37,7 @@ public class SecondFragment extends Fragment {
         JugadasAdapter adapter = new JugadasAdapter(getContext(),jugadas);
         ListaJuan.setAdapter(adapter);
 
-        return view;
+         return view;
 
     }
 
