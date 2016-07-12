@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_camera" type="id" />
+    <item name="nav_gallery" type="id" />
+    <item name="nombre" type="id" />
+    <item name="secuencia" type="id" />
+    <item name="clicks" type="id" />
+</resources>
